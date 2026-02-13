@@ -1,6 +1,18 @@
 # ROS2_homework0211
 터틀봇 시뮬레이터 제어 실습 과제
 
+* 터미널 명렁어
+  - 1번 터미널
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_gazebo empty_world.launch.py
+
+colcon build --symlink-install
+source install/setup.bash
+source ~/.bashrc
+  - 2번 터미널
+ros2 run my_turtlebot_pkg turtlebot_move_and_gui
+
+* 코드
 turtlebot_move_and_gui.py
 : 빌드 후 실행시 GUI 리모콘을 통해 터틀봇 조작 기능
 
